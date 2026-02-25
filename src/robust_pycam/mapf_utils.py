@@ -205,6 +205,135 @@ def export_search_tree_dot(
         f.write("\n".join(lines))
 
 
+def export_search_tree_dot_with_low_level(
+    filepath: str | Path,
+    explored: dict,
+    N_init,
+    N_goal,
+    label_fn: Callable[[object], str],
+) -> None:
+    """
+    Like export_search_tree_dot, but also includes low-level nodes that were tried
+    while expanding each high-level state.
+
+    Requirements on node objects in explored.values():
+    - .parent, .Q, .history (as usual)
+    - .ll_tried: list of low-level nodes popped/processed
+      each low-level node has .who (list[int]), .where (list[Coord]), .depth (int)
+    - .ll_status: dict[(tuple(who), tuple(where))] -> str
+    - .ll_to_state: dict[(tuple(who), tuple(where))] -> state_key (Q_to, history_to)
+    """
+    lines: list[str] = [
+        "digraph search_tree {",
+        "  graph [fontsize=10];",
+        "  node [shape=box, fontsize=10];",
+        "  edge [fontsize=9];",
+    ]
+
+    # High-level nodes
+    state_to_id: dict = {}
+    for i, (state_key, N) in enumerate(explored.items()):
+        nid = f"h{i}"
+        state_to_id[state_key] = nid
+        label = label_fn(N).replace('"', '\\"')
+        extra = ""
+        if N_init is not None and N is N_init:
+            extra = ", style=bold, color=green"
+        if N_goal is not None and N is N_goal:
+            extra = ", style=bold, color=blue"
+        lines.append(f'  {nid} [label="{label}"{extra}];')
+
+    # High-level parent edges
+    for state_key, N in explored.items():
+        nid = state_to_id[state_key]
+        if getattr(N, "parent", None) is not None:
+            parent_key = (N.parent.Q, N.parent.history)
+            if parent_key in state_to_id:
+                pid = state_to_id[parent_key]
+                lines.append(f"  {pid} -> {nid};")
+
+    # Low-level expansion trees per high-level node
+    def ll_key_from_ll_node(C) -> tuple[tuple[int, ...], tuple[Coord, ...]]:
+        return (tuple(getattr(C, "who", ())), tuple(getattr(C, "where", ())))
+
+    def ll_parent_key(ll_key: tuple[tuple[int, ...], tuple[Coord, ...]]):
+        who, where = ll_key
+        if len(who) == 0:
+            return None
+        return (who[:-1], where[:-1])
+
+    def ll_label(C) -> str:
+        who = getattr(C, "who", [])
+        where = getattr(C, "where", [])
+        depth = getattr(C, "depth", len(who))
+        if not who:
+            return f"d={depth}"
+        y, x = where[-1]
+        return f"d={depth}\\na{who[-1]}→({y},{x})"
+
+    status_style = {
+        "popped": 'shape=ellipse, color="#777777"',
+        "invalid_config": 'shape=ellipse, color="#ff8c00"',
+        "k_robust_reject": 'shape=ellipse, color="#cc0000"',
+        "accepted_known_state": 'shape=ellipse, color="#2e8b57"',
+        "accepted_new_state": 'shape=ellipse, color="#2e8b57"',
+    }
+
+    for state_key, N in explored.items():
+        hid = state_to_id[state_key]
+
+        ll_tried = getattr(N, "ll_tried", []) or []
+        if not ll_tried:
+            continue
+
+        # Dedup by low-level key; keep first occurrence for visualization.
+        ll_nodes: dict[tuple[tuple[int, ...], tuple[Coord, ...]], object] = {}
+        for C in ll_tried:
+            k = ll_key_from_ll_node(C)
+            ll_nodes.setdefault(k, C)
+
+        # Create cluster for readability
+        cluster_name = f"cluster_ll_{hid}"
+        lines.append(f"  subgraph {cluster_name} {{")
+        lines.append('    label="LL tried";')
+        lines.append('    style="dashed";')
+        lines.append('    color="#cccccc";')
+        lines.append('    node [shape=ellipse, fontsize=9];')
+
+        llroot = f"{hid}_llroot"
+        lines.append(f'    {llroot} [shape=point, label="", width=0.05];')
+        lines.append("  }")
+        lines.append(f'  {hid} -> {llroot} [style=dotted, color="#999999"];')
+
+        # Emit low-level nodes (outside cluster, but still grouped by edges)
+        llid_of: dict[tuple[tuple[int, ...], tuple[Coord, ...]], str] = {}
+        for j, (k, C) in enumerate(ll_nodes.items()):
+            llid = f"{hid}_ll{j}"
+            llid_of[k] = llid
+            st = getattr(N, "ll_status", {}).get(k, "popped")
+            style = status_style.get(st, status_style["popped"])
+            label = ll_label(C).replace('"', '\\"')
+            lines.append(f'  {llid} [label="{label}", {style}];')
+
+        # Low-level edges and links to generated high-level children
+        for k, llid in llid_of.items():
+            pk = ll_parent_key(k)
+            if pk is None:
+                lines.append(f'  {llroot} -> {llid} [color="#bbbbbb"];')
+            else:
+                pid = llid_of.get(pk, llroot)
+                lines.append(f'  {pid} -> {llid} [color="#bbbbbb"];')
+
+            to_state = getattr(N, "ll_to_state", {}).get(k)
+            if to_state is not None and to_state in state_to_id:
+                child_hid = state_to_id[to_state]
+                lines.append(f'  {llid} -> {child_hid} [style=dashed, color="#2e8b57", penwidth=1];')
+
+    lines.append("}")
+    with open(filepath, "w") as f:
+        f.write("\n".join(lines))
+
+
 def validate_mapf_solution(
     grid: Grid,
     starts: Config,

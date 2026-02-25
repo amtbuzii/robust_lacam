@@ -15,11 +15,10 @@ from src.k_robust_cbs_wrapper import KRobustCBS
 
 from src.robust_pycam import LaCAM as RobustLaCAM
 from src.robust_pycam.mapf_utils import (
-    get_grid as get_grid_robust,
-    get_scenario as get_scenario_robust,
     validate_mapf_solution as validate_mapf_solution_robust,
     validate_robust_mapf_solution,
     get_sum_of_loss as get_sum_of_loss_robust,
+    Config as RobustConfig,
 )
 
 # from src.alt_robust_pycam import LaCAM as AltRobustLaCAM
@@ -32,26 +31,30 @@ from src.robust_pycam.mapf_utils import (
 
 from src.robust_pycam_star import LaCAM as RobustLaCAMStar
 from src.robust_pycam_star.mapf_utils import (
-    get_grid as get_grid_alt,
-    get_scenario as get_scenario_alt,
     validate_robust_mapf_solution as validate_robust_mapf_solution_alt,
     get_sum_of_loss as get_sum_of_loss_alt,
+    Config as RobustStarConfig,
 )
 
-from plot import (
-    plot_solution, 
-    plot_solutions_comparison, 
-    plot_three_solutions_comparison,
-    animate_solution,
-)
+#
+# NOTE: plotting is optional and imported lazily (see --plot flag)
+# so that headless runs (e.g., exporting search trees) don't require
+# a working Matplotlib/fontconfig cache setup.
+#
 
 
-def export_search_tree_and_render(planner, dot_basename: str, label: str) -> None:
+def export_search_tree_and_render(
+    planner, dot_basename: str, label: str, include_low_level: bool = False
+) -> None:
     """Save search tree to .dot and render to .png (if dot is available)."""
     dot_path = Path(f"{dot_basename}.dot")
     png_path = Path(f"{dot_basename}.png")
     try:
-        planner.export_search_tree_dot(str(dot_path))
+        # Newer planners accept include_low_level; fall back if not supported.
+        try:
+            planner.export_search_tree_dot(str(dot_path), include_low_level=include_low_level)
+        except TypeError:
+            planner.export_search_tree_dot(str(dot_path))
         print(f"Search tree ({label}) written to: {dot_path.resolve()}")
         try:
             subprocess.run(
@@ -65,6 +68,59 @@ def export_search_tree_and_render(planner, dot_basename: str, label: str) -> Non
     except RuntimeError as e:
         print(f"  (Search tree not exported: {e})")
 
+def _normalize_config(Q) -> tuple:
+    # Works for all Config implementations in this repo (sequence protocol).
+    return tuple(Q[i] for i in range(len(Q)))
+
+
+def _normalize_state_key(state_key) -> tuple:
+    Q, history = state_key
+    return (_normalize_config(Q), tuple(_normalize_config(h) for h in history))
+
+
+def get_search_tree_stats(planner) -> dict:
+    explored = getattr(planner, "_explored", None) or {}
+    N_goal = getattr(planner, "_N_goal", None)
+
+    edges = 0
+    for N in explored.values():
+        if getattr(N, "parent", None) is not None:
+            edges += 1
+
+    depth_cache: dict = {}
+
+    def depth_of(state_key) -> int:
+        if state_key in depth_cache:
+            return depth_cache[state_key]
+        N = explored.get(state_key)
+        if N is None or getattr(N, "parent", None) is None:
+            depth_cache[state_key] = 0
+            return 0
+        parent_key = (N.parent.Q, N.parent.history)
+        d = 1 + (depth_of(parent_key) if parent_key in explored else 0)
+        depth_cache[state_key] = d
+        return d
+
+    max_depth = 0
+    for state_key in explored.keys():
+        max_depth = max(max_depth, depth_of(state_key))
+
+    goal_depth = None
+    goal_cost = None
+    if N_goal is not None:
+        goal_cost = getattr(N_goal, "g", None)
+        goal_key = (N_goal.Q, N_goal.history)
+        goal_depth = depth_of(goal_key) if goal_key in explored else None
+
+    return {
+        "nodes": len(explored),
+        "edges": edges,
+        "max_depth": max_depth,
+        "goal_found": N_goal is not None,
+        "goal_depth": goal_depth,
+        "goal_cost": goal_cost,
+    }
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -72,13 +128,13 @@ if __name__ == "__main__":
         "-m",
         "--map-file",
         type=Path,
-        default=Path(__file__).parent / "assets" / "empty-4-4.map",
+        default=Path(__file__).parent / "assets" / "empty-3-3.map",
     )
     parser.add_argument(
         "-i",
         "--scen-file",
         type=Path,
-        default=Path(__file__).parent / "assets"/ "empty-4-4.scen",
+        default=Path(__file__).parent / "assets"/ "empty-3-3.scen",
     )
     parser.add_argument(
         "-N",
@@ -110,7 +166,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--flg_star",
         action=argparse.BooleanOptionalAction,
-        default=True,
+        default=False,
         help="choose LaCAM* (default) or vanilla LaCAM",
     )
     parser.add_argument(
@@ -119,15 +175,31 @@ if __name__ == "__main__":
         default=False,
         help="export search tree .dot and .png for Robust and Robust LaCAM*",
     )
+    parser.add_argument(
+        "--export-search-tree-low-level",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="when exporting search tree, include low-level tried nodes too",
+    )
+    parser.add_argument(
+        "--plot",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="plot solutions comparison (requires matplotlib)",
+    )
 
     args = parser.parse_args()
 
-    # define problem instance - use standard version for all (they're compatible)
+    # define problem instance
     grid = get_grid_std(args.map_file)
     starts_std, goals_std = get_scenario_std(args.scen_file, args.num_agents)
-    # Also get from robust versions to ensure type compatibility
-    starts_robust, goals_robust = get_scenario_robust(args.scen_file, args.num_agents)
-    starts_alt, goals_alt = get_scenario_alt(args.scen_file, args.num_agents)
+
+    # IMPORTANT: run the exact same scenario for Robust LaCAM and Robust LaCAM*
+    # (their Config classes are module-local, so convert once for each).
+    starts_robust = RobustConfig(list(starts_std))
+    goals_robust = RobustConfig(list(goals_std))
+    starts_star = RobustStarConfig(list(starts_std))
+    goals_star = RobustStarConfig(list(goals_std))
 
     print("=" * 80)
     print("LaCAM Comparison: k-Robust CBS vs Robust LaCAM vs Robust LaCAM*")
@@ -140,6 +212,7 @@ if __name__ == "__main__":
     print(f"k-robust: {args.k_robust}")
     print(f"LaCAM*: {args.flg_star}")
     print(f"Export search tree: {args.export_search_tree}")
+    print(f"Export search tree low-level: {args.export_search_tree_low_level}")
     print("-" * 80)
 
     planner_k_robust_cbs = KRobustCBS()
@@ -187,7 +260,20 @@ if __name__ == "__main__":
         print(f"Sum of Costs (SOC): {soc_k_robust_cbs}")
         print(f"Runtime: {elapsed_time_k_robust_cbs:.2f}ms")
 
-    #_ = planner_robust.solve(grid, starts_alt, goals_alt, seed=args.seed, time_limit_ms=1, flg_star=False, verbose=0, k_robust=0)
+    # Algorithm warm-up (avoid affecting the real planner state)
+    try:
+        _ = RobustLaCAM().solve(
+            grid=grid,
+            starts=starts_robust,
+            goals=goals_robust,
+            seed=args.seed,
+            time_limit_ms=1,
+            flg_star=False,
+            verbose=0,
+            k_robust=0,
+        )
+    except Exception:
+        pass
 
     # Run Robust LaCAM once
     print("\n" + "=" * 80)
@@ -213,6 +299,7 @@ if __name__ == "__main__":
             planner_robust,
             "search_tree_robust_lacam",
             "Robust LaCAM",
+            include_low_level=args.export_search_tree_low_level,
         )
 
     # Validate solutions (including k-robustness) and calculate metrics
@@ -243,8 +330,8 @@ if __name__ == "__main__":
     start_time_robust_star = time.time()
     solution_robust_star = planner_robust_star.solve(
         grid=grid,
-        starts=starts_alt,
-        goals=goals_alt,
+        starts=starts_star,
+        goals=goals_star,
         seed=args.seed,
         time_limit_ms=args.time_limit_ms,
         flg_star=args.flg_star,
@@ -260,6 +347,7 @@ if __name__ == "__main__":
             planner_robust_star,
             "search_tree_robust_lacam_star",
             "Robust LaCAM*",
+            include_low_level=args.export_search_tree_low_level,
         )
 
     # Validate solutions (including k-robustness) and calculate metrics
@@ -272,7 +360,7 @@ if __name__ == "__main__":
     else:
         try:
             validate_robust_mapf_solution_alt(
-                grid, starts_alt, goals_alt, solution_robust_star, args.k_robust
+                grid, starts_star, goals_star, solution_robust_star, args.k_robust
             )
             cost_robust_star = len(solution_robust_star) - 1
             soc_robust_star = get_sum_of_loss_alt(solution_robust_star)
@@ -288,27 +376,33 @@ if __name__ == "__main__":
         print(f"Runtime: {elapsed_time_robust_star:.2f}ms")
     
    
-    # Plot all three solutions side by side for comparison
-    print("\nPlotting three solutions side by side for comparison...")
-    plot_three_solutions_comparison(
-        grid,
-        solution_k_robust_cbs,
-        solution_robust,
-        solution_robust_star,
-        title1=f"k-Robust CBS (k={args.k_robust})",
-        title2=f"Robust LaCAM (k={args.k_robust})",
-        title3=f"Robust LaCAM* (k={args.k_robust})",
-        main_title="Solutions Comparison",
-        soc1=soc_k_robust_cbs,
-        soc2=soc_robust,
-        soc3=soc_robust_star,
-        runtime1=elapsed_time_k_robust_cbs,
-        runtime2=elapsed_time_robust,
-        runtime3=elapsed_time_robust_star,
-        solution_time1=None,  # k-robust CBS doesn't track this yet
-        solution_time2=solution_time_robust,
-        solution_time3=solution_time_robust_star,
-    )
+    # Plot all three solutions side by side for comparison (optional)
+    if args.plot:
+        try:
+            from plot import plot_three_solutions_comparison
+
+            print("\nPlotting three solutions side by side for comparison...")
+            plot_three_solutions_comparison(
+                grid,
+                solution_k_robust_cbs,
+                solution_robust,
+                solution_robust_star,
+                title1=f"k-Robust CBS (k={args.k_robust})",
+                title2=f"Robust LaCAM (k={args.k_robust})",
+                title3=f"Robust LaCAM* (k={args.k_robust})",
+                main_title="Solutions Comparison",
+                soc1=soc_k_robust_cbs,
+                soc2=soc_robust,
+                soc3=soc_robust_star,
+                runtime1=elapsed_time_k_robust_cbs,
+                runtime2=elapsed_time_robust,
+                runtime3=elapsed_time_robust_star,
+                solution_time1=None,  # k-robust CBS doesn't track this yet
+                solution_time2=solution_time_robust,
+                solution_time3=solution_time_robust_star,
+            )
+        except Exception as e:
+            print(f"\n  (Plotting skipped: {e})")
     
     print("\n" + "=" * 80)
     print("Comparison Summary")
@@ -339,5 +433,32 @@ if __name__ == "__main__":
         diff_robust_star = cost_robust_star - cost_robust
         print(f"Robust LaCAM* vs Robust makespan difference: {diff_robust_star:+d}")
     print("=" * 80)
+
+    if args.export_search_tree:
+        # Compare explored state sets (normalized by coordinates) for a concrete tree comparison.
+        stats_r = get_search_tree_stats(planner_robust)
+        stats_s = get_search_tree_stats(planner_robust_star)
+
+        explored_r = getattr(planner_robust, "_explored", None) or {}
+        explored_s = getattr(planner_robust_star, "_explored", None) or {}
+        states_r = {_normalize_state_key(k) for k in explored_r.keys()}
+        states_s = {_normalize_state_key(k) for k in explored_s.keys()}
+        inter = len(states_r & states_s)
+        union = len(states_r | states_s)
+        jacc = (inter / union) if union else 0.0
+
+        print("\n" + "=" * 80)
+        print("Search Tree Comparison (Robust LaCAM vs Robust LaCAM*)")
+        print("=" * 80)
+        print(f"{'Metric':<18} {'Robust':<14} {'Robust*':<14}")
+        print("-" * 80)
+        print(f"{'Nodes':<18} {stats_r['nodes']!s:<14} {stats_s['nodes']!s:<14}")
+        print(f"{'Edges':<18} {stats_r['edges']!s:<14} {stats_s['edges']!s:<14}")
+        print(f"{'Max depth':<18} {stats_r['max_depth']!s:<14} {stats_s['max_depth']!s:<14}")
+        print(f"{'Goal found':<18} {str(stats_r['goal_found']):<14} {str(stats_s['goal_found']):<14}")
+        print(f"{'Goal depth':<18} {stats_r['goal_depth']!s:<14} {stats_s['goal_depth']!s:<14}")
+        print(f"{'Goal cost(g)':<18} {stats_r['goal_cost']!s:<14} {stats_s['goal_cost']!s:<14}")
+        print("-" * 80)
+        print(f"Explored-state overlap (normalized): intersect={inter}, union={union}, jaccard={jacc:.3f}")
 
  

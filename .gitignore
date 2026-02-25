@@ -191,3 +191,8 @@ pyrightconfig.json
 **/.virtual_documents/
 output.txt
 poetry.lock
+
+# Generated artifacts from search-tree export / headless plotting
+.mplconfig/
+search_tree_*.dot
+search_tree_*.png

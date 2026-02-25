@@ -14,6 +14,7 @@ from .mapf_utils import (
     Deadline,
     Grid,
     export_search_tree_dot as _export_search_tree_dot,
+    export_search_tree_dot_with_low_level as _export_search_tree_dot_with_low_level,
     get_neighbors,
     get_neighbors_safe_k_robust
 )
@@ -44,6 +45,13 @@ class HighLevelNode:
     neighbors: set[HighLevelNode] = field(default_factory=lambda: set())
 
     history: tuple[Config, ...] = field(default_factory=tuple)
+
+    # Low-level nodes that were actually popped/processed ("tried") while expanding this state.
+    ll_tried: list[LowLevelNode] = field(default_factory=list)
+    ll_status: dict[tuple[tuple[int, ...], tuple[Coord, ...]], str] = field(default_factory=dict)
+    ll_to_state: dict[tuple[tuple[int, ...], tuple[Coord, ...]], tuple[Config, tuple[Config, ...]]] = field(
+        default_factory=dict
+    )
 
     def __post_init__(self): #todo - why we need it?
         self.f = self.g + self.h
@@ -131,6 +139,9 @@ class LaCAM:
 
             # low-level search
             C: LowLevelNode = N.tree.popleft()
+            ll_key = (tuple(C.who), tuple(C.where))
+            N.ll_tried.append(C)
+            N.ll_status.setdefault(ll_key, "popped")
             if C.depth < self.num_agents:
                 i = N.order[C.depth]
                 v = N.Q[i]
@@ -142,9 +153,11 @@ class LaCAM:
             Q_to = self.configuration_generaotr(N, C)
             if Q_to is None: 
                 # invalid configuration
+                N.ll_status[ll_key] = "invalid_config"
                 continue
             if not self.check_k_robust(N, Q_to):
                 self.info(1, f"k_robust failed")
+                N.ll_status[ll_key] = "k_robust_reject"
                 continue
 
             history_to = (
@@ -153,6 +166,8 @@ class LaCAM:
             state_key = (Q_to, history_to)
     
             if state_key in EXPLORED:
+                N.ll_status[ll_key] = "accepted_known_state"
+                N.ll_to_state[ll_key] = state_key
                 N_known = EXPLORED[state_key]
                 N.neighbors.add(N_known)
                 OPEN.appendleft(N_known)
@@ -194,6 +209,8 @@ class LaCAM:
                     h=self.get_h_value(Q_to),
                     history=history_to
                 )
+                N.ll_status[ll_key] = "accepted_new_state"
+                N.ll_to_state[ll_key] = state_key
                 N.neighbors.add(N_new)
                 OPEN.appendleft(N_new)
                 EXPLORED[state_key] = N_new
@@ -220,7 +237,7 @@ class LaCAM:
             lines.append(f"h-{len(last_k)-t}: {_config_line(h)}")
         return "\n".join(lines)
 
-    def export_search_tree_dot(self, filepath: str) -> None:
+    def export_search_tree_dot(self, filepath: str, include_low_level: bool = False) -> None:
         """
         Write the high-level search tree to a Graphviz DOT file.
         Each node is a state (Q, history); edges are parent -> child.
@@ -228,13 +245,8 @@ class LaCAM:
         """
         if not hasattr(self, "_explored") or self._explored is None:
             raise RuntimeError("Run solve() before export_search_tree_dot()")
-        _export_search_tree_dot(
-            filepath,
-            self._explored,
-            self._N_init,
-            self._N_goal,
-            self._state_label,
-        )
+        export_fn = _export_search_tree_dot_with_low_level if include_low_level else _export_search_tree_dot
+        export_fn(filepath, self._explored, self._N_init, self._N_goal, self._state_label)
 
     def check_k_robust(self, N: HighLevelNode, Q_next: Config) -> bool:
         if self.k_robust == 0:
