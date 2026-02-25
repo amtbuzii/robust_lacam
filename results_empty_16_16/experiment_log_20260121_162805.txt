@@ -1,0 +1,28 @@
+================================================================================
+k-Robust MAPF Experiment: empty-16-16
+================================================================================
+Start time: 2026-01-21 16:28:05
+Map file: /Users/amit/pylacam/assets/empty-16-16.map
+Scenario directory: /Users/amit/pylacam/assets/scen-empty-16-16
+Number of agents: [5]
+k values: [0, 1, 2, 3, 4, 5, 6, 7]
+Time limit: 5000ms
+LaCAM*: True
+Output directory: /Users/amit/pylacam/results_empty_16_16
+================================================================================
+
+Found 50 scenario files
+Grid loaded: 16x16
+
+
+================================================================================
+Testing with 5 agents
+================================================================================
+
+Testing k=0...
+      empty-16-16-even-1.scen: SUCCESS (makespan=22, SOC=70, time=5003.13ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=24, SOC=58, time=5003.03ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=11, SOC=47, time=5003.24ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=12, SOC=41, time=5003.03ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=18, SOC=63, time=5002.57ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=22, SOC=74, time=5003.09ms)

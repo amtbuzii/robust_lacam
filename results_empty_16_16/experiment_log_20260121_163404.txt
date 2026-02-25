@@ -1,0 +1,38 @@
+================================================================================
+k-Robust MAPF Experiment: empty-16-16
+================================================================================
+Start time: 2026-01-21 16:34:04
+Map file: /Users/amit/pylacam/assets/empty-16-16.map
+Scenario directory: /Users/amit/pylacam/assets/scen-empty-16-16
+Number of agents: [5]
+k values: [4]
+Time limit: 5000ms
+LaCAM*: True
+Output directory: /Users/amit/pylacam/results_empty_16_16
+================================================================================
+
+Found 50 scenario files
+Grid loaded: 16x16
+
+
+================================================================================
+Testing with 5 agents
+================================================================================
+
+Testing k=4...
+      empty-16-16-even-1.scen: SUCCESS (makespan=24, SOC=68, time=5001.75ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=67, SOC=145, time=5004.61ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=22, SOC=68, time=5000.97ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=13, SOC=42, time=5008.73ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=21, SOC=68, time=5000.95ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=54, SOC=134, time=5001.13ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=68, SOC=187, time=5004.75ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=26, SOC=58, time=5000.95ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=20, SOC=68, time=5001.53ms)
+    Progress: 10/50 runs (20%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=24, SOC=79, time=5000.92ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=22, SOC=57, time=5001.21ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=14, SOC=47, time=5002.60ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=58, time=5000.57ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=86, SOC=250, time=5001.25ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=17, SOC=63, time=5063.06ms)

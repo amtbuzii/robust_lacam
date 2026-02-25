@@ -1,0 +1,1427 @@
+================================================================================
+k-Robust MAPF Experiment: empty-16-16
+================================================================================
+Start time: 2026-01-11 23:29:04
+Map file: /Users/amit/pylacam/assets/empty-16-16.map
+Scenario directory: /Users/amit/pylacam/assets/scen-empty-16-16
+Number of agents: [5, 10, 15]
+k values: [0, 1, 2, 3, 4, 5, 6, 7]
+Time limit: 10000ms
+LaCAM*: True
+Output directory: /Users/amit/pylacam/results_empty_16_16
+================================================================================
+
+Found 50 scenario files
+Grid loaded: 16x16
+
+
+================================================================================
+Testing with 5 agents
+================================================================================
+
+Testing k=0...
+      empty-16-16-even-1.scen: SUCCESS (makespan=22, SOC=70, time=10000.82ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=24, SOC=58, time=10000.74ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=11, SOC=47, time=10000.92ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=12, SOC=41, time=10000.71ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=18, SOC=63, time=10000.73ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=22, SOC=74, time=10000.91ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=19, SOC=56, time=10012.48ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=25, SOC=60, time=10000.71ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=14, SOC=55, time=10000.71ms)
+    Progress: 10/1200 runs (0%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=18, SOC=70, time=10001.03ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=15, SOC=52, time=10001.20ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=12, SOC=45, time=10000.65ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=13, SOC=48, time=10000.66ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=20, SOC=56, time=10000.66ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=13, SOC=51, time=10000.72ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=14, SOC=41, time=10000.92ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=12, SOC=43, time=10000.95ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=15, SOC=57, time=10000.64ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=17, SOC=50, time=10000.69ms)
+    Progress: 20/1200 runs (1%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=19, SOC=56, time=10137.03ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10000.71ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=16, SOC=52, time=10000.76ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=14, SOC=40, time=10000.74ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=20, SOC=59, time=10001.32ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=19, SOC=47, time=10000.85ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=55, time=10000.88ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=17, SOC=64, time=10001.14ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=11, SOC=30, time=10000.75ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=15, SOC=52, time=10000.67ms)
+    Progress: 30/1200 runs (2%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=26, SOC=73, time=10000.81ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=17, SOC=52, time=10000.73ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10000.76ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=15, SOC=55, time=10000.74ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=13, SOC=49, time=10000.92ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=21, SOC=72, time=10001.09ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=18, SOC=44, time=10001.40ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=17, SOC=63, time=10026.15ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=18, SOC=60, time=10000.83ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=26, SOC=61, time=10000.77ms)
+    Progress: 40/1200 runs (3%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=15, SOC=41, time=10000.72ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=18, SOC=68, time=10001.03ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=9, SOC=30, time=10000.73ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=18, SOC=49, time=10000.68ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=22, SOC=64, time=10001.12ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=16, SOC=55, time=10001.11ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=52, time=10000.97ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=19, SOC=58, time=10000.79ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10005.25ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=12, SOC=42, time=10000.71ms)
+    Progress: 50/1200 runs (4%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=13, SOC=46, time=10000.69ms)
+    k=0: 50/50 successful (avg makespan: 17.18, avg SOC: 53.80, avg time: 10004.39ms)
+
+Testing k=1...
+      empty-16-16-even-1.scen: SUCCESS (makespan=23, SOC=67, time=10000.77ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=25, SOC=61, time=10000.81ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=11, SOC=47, time=10000.92ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=12, SOC=41, time=10000.60ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=30, SOC=88, time=10001.10ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=22, SOC=74, time=10000.86ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=21, SOC=56, time=10001.15ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=27, SOC=58, time=10000.57ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=18, SOC=61, time=10000.56ms)
+    Progress: 60/1200 runs (5%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=26, SOC=83, time=10000.67ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=17, SOC=52, time=10000.71ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10000.56ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.82ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=43, SOC=130, time=10000.62ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=13, SOC=52, time=10000.66ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=14, SOC=43, time=10001.27ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=12, SOC=43, time=10000.81ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=15, SOC=57, time=10001.25ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=59, SOC=195, time=10000.61ms)
+    Progress: 70/1200 runs (5%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=26, SOC=69, time=10000.65ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10000.65ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=16, SOC=52, time=10000.89ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=22, SOC=57, time=10000.60ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=24, SOC=71, time=10000.84ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=24, SOC=57, time=10000.63ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=55, time=10000.95ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=25, SOC=71, time=10000.66ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=11, SOC=32, time=10000.57ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=31, SOC=99, time=10000.63ms)
+    Progress: 80/1200 runs (6%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=38, SOC=98, time=10001.31ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=17, SOC=52, time=10000.68ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10001.01ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=190, SOC=865, time=10001.16ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=16, SOC=56, time=10045.45ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=21, SOC=72, time=10000.64ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=19, SOC=43, time=10000.68ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=18, SOC=65, time=10000.74ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=18, SOC=60, time=10001.08ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=26, SOC=61, time=10000.76ms)
+    Progress: 90/1200 runs (7%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=15, SOC=41, time=10000.73ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=20, SOC=68, time=10000.79ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=9, SOC=30, time=10001.03ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=18, SOC=49, time=10000.69ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=185, SOC=729, time=10044.78ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=67, time=10001.24ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=52, time=10001.00ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=36, SOC=97, time=10000.58ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.61ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=13, SOC=43, time=10001.12ms)
+    Progress: 100/1200 runs (8%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=17, SOC=54, time=10000.58ms)
+    k=1: 50/50 successful (avg makespan: 27.92, avg SOC: 92.74, avg time: 10002.58ms)
+
+Testing k=2...
+      empty-16-16-even-1.scen: SUCCESS (makespan=23, SOC=67, time=10000.56ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=25, SOC=61, time=10000.74ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=15, SOC=51, time=10000.77ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=12, SOC=41, time=10000.56ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=21, SOC=66, time=10000.65ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=24, SOC=76, time=10000.92ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=45, SOC=133, time=10000.61ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=27, SOC=58, time=10000.57ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=18, SOC=61, time=10038.55ms)
+    Progress: 110/1200 runs (9%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=28, SOC=85, time=10000.74ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=20, SOC=55, time=10000.66ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10100.43ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.72ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=37, SOC=107, time=10000.98ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=15, SOC=56, time=10035.61ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=16, SOC=45, time=10111.63ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=24, SOC=76, time=10000.65ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=15, SOC=57, time=10000.57ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=37, SOC=107, time=10000.65ms)
+    Progress: 120/1200 runs (10%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=26, SOC=69, time=10000.63ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10000.90ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=18, SOC=54, time=10000.70ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=23, SOC=58, time=10000.76ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=22, SOC=59, time=10000.77ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=24, SOC=57, time=10001.03ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=55, time=10000.80ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=20, SOC=65, time=10000.68ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=11, SOC=32, time=10018.15ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=31, SOC=100, time=10000.51ms)
+    Progress: 130/1200 runs (10%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=42, SOC=103, time=10000.68ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=17, SOC=52, time=10000.63ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10001.40ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=235, SOC=933, time=10000.59ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=18, SOC=63, time=10000.68ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=23, SOC=74, time=10000.75ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=19, SOC=43, time=10000.53ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=19, SOC=68, time=10000.67ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=18, SOC=60, time=10000.55ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=32, SOC=74, time=10000.66ms)
+    Progress: 140/1200 runs (11%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=15, SOC=41, time=10000.65ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=20, SOC=68, time=10000.76ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=11, SOC=32, time=10000.64ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=23, SOC=65, time=10000.94ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=138, SOC=491, time=10000.58ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=67, time=10000.69ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=52, time=10097.02ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=36, SOC=98, time=10000.60ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.88ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=15, SOC=48, time=10000.63ms)
+    Progress: 150/1200 runs (12%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=17, SOC=54, time=10001.17ms)
+    k=2: 50/50 successful (avg makespan: 28.56, avg SOC: 90.02, avg time: 10008.66ms)
+
+Testing k=3...
+      empty-16-16-even-1.scen: SUCCESS (makespan=23, SOC=67, time=10000.56ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=33, SOC=76, time=10000.58ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=15, SOC=51, time=10000.63ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=12, SOC=41, time=10001.35ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=23, SOC=70, time=10000.75ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=26, SOC=82, time=10000.60ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=45, SOC=126, time=10000.66ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=27, SOC=58, time=10000.46ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=20, SOC=65, time=10000.54ms)
+    Progress: 160/1200 runs (13%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=23, SOC=74, time=10000.65ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=20, SOC=55, time=10000.71ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10000.79ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.86ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=41, SOC=113, time=10001.29ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=17, SOC=60, time=10000.52ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=18, SOC=49, time=10023.93ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=24, SOC=76, time=10000.51ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=19, SOC=66, time=10000.63ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=44, SOC=145, time=10000.69ms)
+    Progress: 170/1200 runs (14%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=19, SOC=56, time=10000.56ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10001.91ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=17, SOC=53, time=10000.65ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=24, SOC=59, time=10001.03ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=22, SOC=59, time=10000.51ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=24, SOC=59, time=10001.10ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=55, time=10000.61ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=20, SOC=65, time=10000.57ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=11, SOC=34, time=10000.79ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=31, SOC=102, time=10000.66ms)
+    Progress: 180/1200 runs (15%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=44, SOC=105, time=10001.35ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=17, SOC=52, time=10000.57ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10000.57ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=253, SOC=1146, time=10000.90ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=20, SOC=57, time=10000.77ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=23, SOC=74, time=10000.54ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=18, SOC=42, time=10000.78ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=23, SOC=74, time=10000.47ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=18, SOC=60, time=10000.61ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=28, SOC=63, time=10000.52ms)
+    Progress: 190/1200 runs (15%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=17, SOC=43, time=10000.94ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=19, SOC=67, time=10007.76ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=11, SOC=32, time=10000.70ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=25, SOC=68, time=10000.50ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=85, SOC=299, time=10000.62ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=67, time=10149.44ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=52, time=10000.70ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=36, SOC=100, time=10000.52ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.57ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=19, SOC=59, time=10001.03ms)
+    Progress: 200/1200 runs (16%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=15, SOC=47, time=10000.58ms)
+    k=3: 50/50 successful (avg makespan: 28.44, avg SOC: 91.74, avg time: 10004.31ms)
+
+Testing k=4...
+      empty-16-16-even-1.scen: SUCCESS (makespan=23, SOC=67, time=10000.55ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=33, SOC=76, time=10000.61ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=15, SOC=51, time=10000.61ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=12, SOC=41, time=10001.07ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=23, SOC=70, time=10060.37ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=47, SOC=128, time=10000.47ms)
+      empty-16-16-even-15.scen: FAILED validation - invalid k-robust solution: agent 0 at location (5, 11) at time 32 conflicts with agent 1 at the same location at time 28 (k=4, time difference: 4)
+      empty-16-16-even-16.scen: SUCCESS (makespan=27, SOC=60, time=10000.59ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=22, SOC=67, time=10000.74ms)
+    Progress: 210/1200 runs (17%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=23, SOC=74, time=10001.45ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=20, SOC=55, time=10000.88ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10000.55ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.58ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=41, SOC=113, time=10000.93ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=17, SOC=60, time=10000.50ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=18, SOC=49, time=10000.51ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=24, SOC=76, time=10000.59ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=19, SOC=66, time=10000.85ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=46, SOC=148, time=10000.79ms)
+    Progress: 220/1200 runs (18%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=25, SOC=74, time=10000.56ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10001.23ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=20, SOC=56, time=10000.55ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=26, SOC=61, time=10000.57ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=22, SOC=59, time=10000.72ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=25, SOC=60, time=10000.54ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=55, time=10000.91ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=22, SOC=67, time=10000.54ms)
+      empty-16-16-random-11.scen: FAILED validation - invalid k-robust solution: agent 2 at location (12, 7) at time 8 conflicts with agent 1 at the same location at time 4 (k=4, time difference: 4)
+      empty-16-16-random-12.scen: SUCCESS (makespan=35, SOC=107, time=10000.62ms)
+    Progress: 230/1200 runs (19%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=44, SOC=105, time=10001.61ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=19, SOC=54, time=10000.86ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10001.00ms)
+      empty-16-16-random-16.scen: FAILED validation - invalid k-robust solution: agent 3 at location (3, 8) at time 283 conflicts with agent 0 at the same location at time 279 (k=4, time difference: 4)
+      empty-16-16-random-17.scen: FAILED validation - invalid k-robust solution: agent 4 at location (7, 10) at time 12 conflicts with agent 3 at the same location at time 8 (k=4, time difference: 4)
+      empty-16-16-random-18.scen: SUCCESS (makespan=23, SOC=74, time=10000.56ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=18, SOC=42, time=10000.53ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=48, SOC=139, time=10000.58ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=20, SOC=66, time=10000.58ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=28, SOC=63, time=10000.54ms)
+    Progress: 240/1200 runs (20%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=17, SOC=43, time=10000.60ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=21, SOC=72, time=10000.52ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=12, SOC=33, time=10000.83ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=25, SOC=68, time=10000.77ms)
+      empty-16-16-random-3.scen: FAILED validation - invalid k-robust solution: agent 1 at location (9, 13) at time 168 conflicts with agent 4 at the same location at time 164 (k=4, time difference: 4)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=67, time=10000.60ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=52, time=10000.63ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=36, SOC=100, time=10000.70ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.76ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=121, SOC=457, time=10000.61ms)
+    Progress: 250/1200 runs (20%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=17, SOC=51, time=10000.56ms)
+    k=4: 45/50 successful (avg makespan: 26.38, avg SOC: 77.56, avg time: 10002.04ms)
+
+Testing k=5...
+      empty-16-16-even-1.scen: SUCCESS (makespan=23, SOC=68, time=10000.54ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=30, SOC=64, time=10000.56ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=15, SOC=51, time=10051.72ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=14, SOC=46, time=10117.17ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=26, SOC=73, time=10000.59ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=42, SOC=118, time=10000.74ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=46, SOC=129, time=10000.97ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=27, SOC=60, time=10101.86ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=20, SOC=65, time=10000.50ms)
+    Progress: 260/1200 runs (21%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=21, SOC=76, time=10000.62ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=21, SOC=56, time=10000.61ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10000.52ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.50ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=41, SOC=114, time=10000.59ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=17, SOC=62, time=10000.70ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=21, SOC=54, time=10000.56ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=24, SOC=76, time=10000.44ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=19, SOC=69, time=10000.56ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=39, SOC=116, time=10000.45ms)
+    Progress: 270/1200 runs (22%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=21, SOC=65, time=10000.55ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10001.40ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=20, SOC=56, time=10000.47ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=26, SOC=61, time=10000.58ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=22, SOC=59, time=10000.56ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=26, SOC=65, time=10000.49ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=55, time=10000.68ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=22, SOC=67, time=10000.92ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=11, SOC=35, time=10000.61ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=38, SOC=113, time=10000.62ms)
+    Progress: 280/1200 runs (23%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=44, SOC=105, time=10000.55ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=19, SOC=54, time=10000.64ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10000.50ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=337, SOC=1426, time=10000.63ms)
+      empty-16-16-random-17.scen: FAILED validation - invalid k-robust solution: agent 4 at location (7, 10) at time 12 conflicts with agent 3 at the same location at time 8 (k=5, time difference: 4)
+      empty-16-16-random-18.scen: SUCCESS (makespan=23, SOC=74, time=10000.67ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=18, SOC=42, time=10000.55ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=26, SOC=82, time=10001.01ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=20, SOC=66, time=10000.49ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=30, SOC=67, time=10000.51ms)
+    Progress: 290/1200 runs (24%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=21, SOC=47, time=10000.55ms)
+      empty-16-16-random-23.scen: FAILED validation - invalid k-robust solution: agent 3 at location (6, 5) at time 20 conflicts with agent 0 at the same location at time 15 (k=5, time difference: 5)
+      empty-16-16-random-24.scen: FAILED validation - invalid k-robust solution: agent 1 at location (8, 5) at time 8 conflicts with agent 3 at the same location at time 3 (k=5, time difference: 5)
+      empty-16-16-random-25.scen: FAILED validation - invalid k-robust solution: agent 0 at location (8, 5) at time 37 conflicts with agent 2 at the same location at time 32 (k=5, time difference: 5)
+      empty-16-16-random-3.scen: SUCCESS (makespan=180, SOC=668, time=10000.53ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=67, time=10000.59ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=56, time=10000.62ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=38, SOC=103, time=10000.58ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.74ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=81, SOC=353, time=10000.54ms)
+    Progress: 300/1200 runs (25%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=21, SOC=59, time=10000.81ms)
+    k=5: 46/50 successful (avg makespan: 35.72, avg SOC: 117.52, avg time: 10006.47ms)
+
+Testing k=6...
+      empty-16-16-even-1.scen: SUCCESS (makespan=32, SOC=86, time=10000.97ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=30, SOC=64, time=10000.72ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=14, SOC=50, time=10000.71ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=14, SOC=46, time=10000.45ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=29, SOC=79, time=10000.62ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=45, SOC=118, time=10000.53ms)
+      empty-16-16-even-15.scen: FAILED validation - invalid k-robust solution: agent 0 at location (5, 11) at time 31 conflicts with agent 1 at the same location at time 25 (k=6, time difference: 6)
+      empty-16-16-even-16.scen: SUCCESS (makespan=27, SOC=61, time=10000.74ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=20, SOC=65, time=10000.53ms)
+    Progress: 310/1200 runs (25%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=21, SOC=76, time=10000.47ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=22, SOC=57, time=10000.59ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10000.53ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.68ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=43, SOC=118, time=10000.59ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=17, SOC=62, time=10000.57ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=23, SOC=56, time=10000.72ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=24, SOC=76, time=10069.67ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=21, SOC=71, time=10000.54ms)
+      empty-16-16-even-3.scen: FAILED validation - invalid k-robust solution: agent 0 at location (8, 6) at time 29 conflicts with agent 1 at the same location at time 24 (k=6, time difference: 5)
+    Progress: 320/1200 runs (26%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=31, SOC=91, time=10091.94ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10000.56ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=18, SOC=56, time=10000.52ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=26, SOC=61, time=10000.57ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=22, SOC=59, time=10000.50ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=26, SOC=64, time=10000.47ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=25, SOC=65, time=10000.60ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=22, SOC=68, time=10000.47ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=13, SOC=38, time=10000.59ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=38, SOC=115, time=10000.45ms)
+    Progress: 330/1200 runs (27%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=44, SOC=105, time=10000.53ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=19, SOC=54, time=10000.53ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10000.49ms)
+      empty-16-16-random-16.scen: FAILED validation - invalid k-robust solution: agent 3 at location (3, 8) at time 192 conflicts with agent 0 at the same location at time 186 (k=6, time difference: 6)
+      empty-16-16-random-17.scen: FAILED validation - invalid k-robust solution: agent 4 at location (8, 10) at time 15 conflicts with agent 3 at the same location at time 9 (k=6, time difference: 6)
+      empty-16-16-random-18.scen: SUCCESS (makespan=23, SOC=76, time=10000.79ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=18, SOC=42, time=10000.44ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=23, SOC=81, time=10000.60ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=24, SOC=76, time=10000.47ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=30, SOC=67, time=10000.77ms)
+    Progress: 340/1200 runs (28%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=21, SOC=47, time=10000.50ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=26, SOC=82, time=10112.27ms)
+      empty-16-16-random-24.scen: FAILED validation - invalid k-robust solution: agent 1 at location (7, 5) at time 8 conflicts with agent 3 at the same location at time 2 (k=6, time difference: 6)
+      empty-16-16-random-25.scen: FAILED validation - invalid k-robust solution: agent 0 at location (8, 5) at time 50 conflicts with agent 2 at the same location at time 44 (k=6, time difference: 6)
+      empty-16-16-random-3.scen: FAILED validation - invalid k-robust solution: agent 1 at location (9, 13) at time 91 conflicts with agent 4 at the same location at time 85 (k=6, time difference: 6)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=67, time=10000.52ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=56, time=10000.52ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=38, SOC=105, time=10000.49ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.54ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=52, SOC=209, time=10000.43ms)
+    Progress: 350/1200 runs (29%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=22, SOC=62, time=10000.57ms)
+    k=6: 43/50 successful (avg makespan: 25.02, avg SOC: 71.98, avg time: 10006.90ms)
+
+Testing k=7...
+      empty-16-16-even-1.scen: SUCCESS (makespan=29, SOC=80, time=10000.48ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=34, SOC=70, time=10000.58ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=20, SOC=62, time=10000.72ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=15, SOC=51, time=10000.54ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=30, SOC=77, time=10000.68ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=36, SOC=98, time=10000.50ms)
+      empty-16-16-even-15.scen: FAILED validation - invalid k-robust solution: agent 0 at location (5, 11) at time 27 conflicts with agent 1 at the same location at time 20 (k=7, time difference: 7)
+      empty-16-16-even-16.scen: SUCCESS (makespan=29, SOC=65, time=10001.62ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=24, SOC=69, time=10000.79ms)
+    Progress: 360/1200 runs (30%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=22, SOC=79, time=10000.66ms)
+      empty-16-16-even-19.scen: FAILED validation - invalid k-robust solution: agent 0 at location (7, 4) at time 13 conflicts with agent 4 at the same location at time 6 (k=7, time difference: 7)
+      empty-16-16-even-2.scen: SUCCESS (makespan=13, SOC=46, time=10000.55ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=17, SOC=54, time=10000.57ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=43, SOC=118, time=10000.57ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=18, SOC=64, time=10000.72ms)
+      empty-16-16-even-23.scen: FAILED validation - invalid k-robust solution: agent 3 at location (2, 6) at time 23 conflicts with agent 2 at the same location at time 16 (k=7, time difference: 7)
+      empty-16-16-even-24.scen: SUCCESS (makespan=22, SOC=64, time=10000.62ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=23, SOC=77, time=10000.44ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=56, SOC=179, time=10000.49ms)
+    Progress: 370/1200 runs (30%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=35, SOC=92, time=10000.77ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=56, time=10000.77ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=18, SOC=56, time=10000.67ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=26, SOC=61, time=10000.65ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=22, SOC=59, time=10000.83ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=26, SOC=64, time=10000.52ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=25, SOC=65, time=10000.57ms)
+      empty-16-16-random-10.scen: FAILED validation - invalid k-robust solution: agent 3 at location (11, 8) at time 19 conflicts with agent 1 at the same location at time 12 (k=7, time difference: 7)
+      empty-16-16-random-11.scen: FAILED validation - invalid k-robust solution: agent 2 at location (12, 7) at time 8 conflicts with agent 1 at the same location at time 4 (k=7, time difference: 4)
+      empty-16-16-random-12.scen: SUCCESS (makespan=37, SOC=112, time=10000.54ms)
+    Progress: 380/1200 runs (31%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=44, SOC=105, time=10001.75ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=19, SOC=54, time=10000.56ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=57, time=10000.83ms)
+      empty-16-16-random-16.scen: FAILED validation - invalid k-robust solution: agent 3 at location (3, 8) at time 134 conflicts with agent 0 at the same location at time 127 (k=7, time difference: 7)
+      empty-16-16-random-17.scen: FAILED validation - invalid k-robust solution: agent 4 at location (8, 10) at time 14 conflicts with agent 3 at the same location at time 9 (k=7, time difference: 5)
+      empty-16-16-random-18.scen: SUCCESS (makespan=24, SOC=77, time=10000.50ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=18, SOC=42, time=10000.56ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=25, SOC=85, time=10000.67ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=24, SOC=76, time=10030.46ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=32, SOC=70, time=10000.42ms)
+    Progress: 390/1200 runs (32%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=21, SOC=47, time=10000.75ms)
+      empty-16-16-random-23.scen: FAILED validation - invalid k-robust solution: agent 3 at location (6, 5) at time 28 conflicts with agent 0 at the same location at time 23 (k=7, time difference: 5)
+      empty-16-16-random-24.scen: FAILED validation - invalid k-robust solution: agent 1 at location (7, 5) at time 8 conflicts with agent 3 at the same location at time 2 (k=7, time difference: 6)
+      empty-16-16-random-25.scen: SUCCESS (makespan=37, SOC=99, time=10000.43ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=119, SOC=429, time=10000.59ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=22, SOC=66, time=10000.59ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=20, SOC=58, time=10000.52ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=38, SOC=105, time=10000.56ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=51, time=10000.46ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=224, SOC=1050, time=10000.49ms)
+    Progress: 400/1200 runs (33%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=21, SOC=53, time=10000.65ms)
+    k=7: 41/50 successful (avg makespan: 33.37, avg SOC: 105.90, avg time: 10001.38ms)
+
+
+================================================================================
+Testing with 10 agents
+================================================================================
+
+Testing k=0...
+      empty-16-16-even-1.scen: SUCCESS (makespan=22, SOC=132, time=10008.22ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=24, SOC=106, time=10001.52ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=15, SOC=107, time=10001.56ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=18, SOC=105, time=10003.12ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=19, SOC=134, time=10004.26ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=23, SOC=148, time=10004.71ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=19, SOC=113, time=10000.83ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=25, SOC=124, time=10002.24ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=20, SOC=134, time=10006.38ms)
+    Progress: 410/1200 runs (34%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=19, SOC=129, time=10000.24ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=18, SOC=125, time=10005.71ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=21, SOC=123, time=10005.09ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=14, SOC=99, time=10005.00ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=20, SOC=139, time=10003.78ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=24, SOC=122, time=10001.31ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=18, SOC=89, time=10007.61ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=19, SOC=107, time=10001.34ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=21, SOC=118, time=10001.07ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=18, SOC=123, time=10002.66ms)
+    Progress: 420/1200 runs (35%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=20, SOC=134, time=10004.76ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=20, SOC=103, time=10007.43ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=16, SOC=104, time=10001.12ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=15, SOC=93, time=10001.28ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=20, SOC=109, time=10001.41ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=19, SOC=111, time=10000.59ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=104, time=10002.09ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=21, SOC=139, time=10002.28ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=13, SOC=71, time=10007.28ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=18, SOC=103, time=10000.27ms)
+    Progress: 430/1200 runs (35%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=26, SOC=134, time=10000.40ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=17, SOC=113, time=10003.98ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=108, time=10001.77ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=15, SOC=86, time=10007.48ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=17, SOC=103, time=10003.03ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=21, SOC=142, time=10007.28ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=24, SOC=123, time=10000.79ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=17, SOC=128, time=10008.01ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=20, SOC=128, time=10004.75ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=26, SOC=119, time=10000.65ms)
+    Progress: 440/1200 runs (36%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=20, SOC=119, time=10003.58ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=18, SOC=120, time=10007.53ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=21, SOC=88, time=10001.95ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=19, SOC=112, time=10000.28ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=22, SOC=143, time=10000.29ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=142, time=10008.32ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=19, SOC=107, time=10004.57ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=19, SOC=122, time=10007.23ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=102, time=10006.64ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=21, SOC=110, time=10045.20ms)
+    Progress: 450/1200 runs (37%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=17, SOC=98, time=10006.97ms)
+    k=0: 50/50 successful (avg makespan: 19.64, avg SOC: 115.90, avg time: 10004.52ms)
+
+Testing k=1...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: SUCCESS (makespan=42, SOC=137, time=10004.81ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: SUCCESS (makespan=37, SOC=136, time=10001.99ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=100, SOC=565, time=10008.29ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=107, SOC=548, time=10003.57ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=201, SOC=1111, time=10000.55ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=24, SOC=136, time=10006.68ms)
+    Progress: 460/1200 runs (38%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=43, SOC=186, time=10002.39ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=31, SOC=142, time=10005.04ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=160, SOC=688, time=10005.33ms)
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: SUCCESS (makespan=24, SOC=122, time=10007.42ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=73, SOC=408, time=10004.63ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=49, SOC=244, time=10000.32ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=74, SOC=380, time=10003.73ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=213, SOC=1251, time=10004.70ms)
+    Progress: 470/1200 runs (39%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=31, SOC=148, time=10005.81ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=23, SOC=104, time=10006.27ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=23, SOC=143, time=10006.26ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=21, SOC=105, time=10004.82ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=128, SOC=582, time=10006.90ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=62, SOC=245, time=10007.02ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=61, SOC=247, time=10000.24ms)
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: SUCCESS (makespan=198, SOC=841, time=10005.79ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=24, SOC=133, time=10000.28ms)
+    Progress: 480/1200 runs (40%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=49, SOC=195, time=10004.50ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=80, SOC=345, time=10001.12ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=60, SOC=348, time=10006.80ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=39, SOC=165, time=10007.97ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=83, SOC=457, time=10002.02ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=144, SOC=876, time=10000.22ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=216, SOC=1063, time=10003.05ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=166, SOC=977, time=10000.80ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=124, SOC=505, time=10002.84ms)
+    Progress: 490/1200 runs (40%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=91, SOC=435, time=10004.82ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=191, SOC=1016, time=10004.66ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=151, SOC=796, time=10002.71ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=35, SOC=143, time=10001.37ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=68, SOC=307, time=10002.23ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=51, SOC=213, time=10004.35ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=23, SOC=115, time=10001.37ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=44, SOC=225, time=10000.65ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=26, SOC=108, time=10000.34ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=62, SOC=248, time=10001.57ms)
+    Progress: 500/1200 runs (41%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=1: 42/50 successful (avg makespan: 82.19, avg SOC: 408.07, avg time: 10003.72ms)
+
+Testing k=2...
+      empty-16-16-even-1.scen: SUCCESS (makespan=74, SOC=360, time=10002.15ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=35, SOC=128, time=10004.90ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=432, SOC=2039, time=10001.80ms)
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: SUCCESS (makespan=100, SOC=545, time=10000.53ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=111, SOC=545, time=10005.64ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=128, SOC=619, time=10001.56ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=126, SOC=781, time=10000.27ms)
+    Progress: 510/1200 runs (42%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=57, SOC=232, time=10000.64ms)
+      empty-16-16-even-2.scen: FAILED validation - invalid k-robust solution: agent 3 at location (10, 12) at time 56 conflicts with agent 8 at the same location at time 54 (k=2, time difference: 2)
+      empty-16-16-even-20.scen: SUCCESS (makespan=349, SOC=1779, time=10000.28ms)
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: SUCCESS (makespan=30, SOC=143, time=10002.32ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=32, SOC=136, time=10003.39ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=207, SOC=1124, time=10006.43ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=119, SOC=659, time=10002.29ms)
+    Progress: 520/1200 runs (43%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=183, SOC=836, time=10004.98ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=23, SOC=104, time=10001.43ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=39, SOC=169, time=10000.25ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=162, SOC=787, time=10004.97ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=159, SOC=689, time=10001.31ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=199, SOC=809, time=10000.29ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=83, SOC=370, time=10011.20ms)
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: SUCCESS (makespan=261, SOC=1422, time=10000.20ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=153, SOC=798, time=10000.80ms)
+    Progress: 530/1200 runs (44%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=43, SOC=180, time=10006.01ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=58, SOC=284, time=10000.57ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=68, SOC=383, time=10003.17ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=56, SOC=199, time=10005.69ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=60, SOC=238, time=10003.20ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=185, SOC=768, time=10007.47ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=270, SOC=1384, time=10000.28ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=1079, SOC=5308, time=10002.15ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=168, SOC=771, time=10008.03ms)
+    Progress: 540/1200 runs (45%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=110, SOC=555, time=10002.39ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=117, SOC=571, time=10006.75ms)
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: SUCCESS (makespan=35, SOC=143, time=10002.53ms)
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: SUCCESS (makespan=131, SOC=720, time=10005.34ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=49, SOC=179, time=10007.88ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=135, SOC=818, time=10006.69ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=26, SOC=108, time=10003.36ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=67, SOC=322, time=10001.78ms)
+    Progress: 550/1200 runs (45%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=2: 39/50 successful (avg makespan: 146.64, avg SOC: 718.08, avg time: 10003.36ms)
+
+Testing k=3...
+      empty-16-16-even-1.scen: SUCCESS (makespan=221, SOC=1363, time=10000.18ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=45, SOC=153, time=10000.63ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=335, SOC=1489, time=10000.22ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=480, SOC=2160, time=10000.31ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=87, SOC=427, time=10002.78ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=76, SOC=355, time=10004.48ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=255, SOC=1135, time=10005.16ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=70, SOC=325, time=10003.42ms)
+    Progress: 560/1200 runs (46%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=61, SOC=263, time=10003.36ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=28, SOC=142, time=10005.73ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=78, SOC=336, time=10000.20ms)
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: SUCCESS (makespan=182, SOC=1171, time=10002.27ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=31, SOC=150, time=10004.45ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=36, SOC=142, time=10003.20ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=140, SOC=747, time=10005.78ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=143, SOC=726, time=10003.79ms)
+    Progress: 570/1200 runs (47%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=40, SOC=191, time=10002.77ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=23, SOC=104, time=10000.21ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=200, SOC=940, time=10003.06ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=32, SOC=156, time=10004.01ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=41, SOC=233, time=10003.69ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=54, SOC=216, time=10003.53ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=171, SOC=969, time=10000.24ms)
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: SUCCESS (makespan=237, SOC=1032, time=10005.34ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=30, SOC=160, time=10004.06ms)
+    Progress: 580/1200 runs (48%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=43, SOC=180, time=10004.45ms)
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: SUCCESS (makespan=52, SOC=194, time=10005.09ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=53, SOC=225, time=10000.67ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=101, SOC=523, time=10003.99ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=114, SOC=594, time=10000.22ms)
+      empty-16-16-random-20.scen: FAILED validation - invalid k-robust solution: agent 4 at location (3, 1) at time 199 conflicts with agent 7 at the same location at time 196 (k=3, time difference: 3)
+      empty-16-16-random-21.scen: SUCCESS (makespan=119, SOC=494, time=10033.28ms)
+    Progress: 590/1200 runs (49%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=173, SOC=805, time=10000.27ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=91, SOC=477, time=10005.53ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=174, SOC=990, time=10001.56ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=37, SOC=145, time=10004.04ms)
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: SUCCESS (makespan=36, SOC=174, time=10004.37ms)
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: SUCCESS (makespan=27, SOC=109, time=10006.07ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=31, SOC=150, time=10000.49ms)
+    Progress: 600/1200 runs (50%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=3: 38/50 successful (avg makespan: 109.13, avg SOC: 530.13, avg time: 10003.76ms)
+
+Testing k=4...
+      empty-16-16-even-1.scen: SUCCESS (makespan=173, SOC=813, time=10001.67ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=84, SOC=323, time=10001.31ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: SUCCESS (makespan=248, SOC=1232, time=10001.85ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=163, SOC=726, time=10007.15ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=120, SOC=618, time=10000.28ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=66, SOC=304, time=10003.40ms)
+    Progress: 610/1200 runs (50%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=23, SOC=133, time=10384.89ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=35, SOC=144, time=10000.23ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=68, SOC=397, time=10004.57ms)
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: SUCCESS (makespan=34, SOC=165, time=10003.49ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=42, SOC=178, time=10000.25ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=181, SOC=913, time=10000.26ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=237, SOC=1411, time=10001.91ms)
+    Progress: 620/1200 runs (51%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=160, SOC=638, time=10000.23ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=22, SOC=107, time=10002.35ms)
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: SUCCESS (makespan=32, SOC=156, time=10000.20ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=41, SOC=216, time=10005.77ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=73, SOC=373, time=10000.26ms)
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: SUCCESS (makespan=153, SOC=736, time=10005.49ms)
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 630/1200 runs (52%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=83, SOC=358, time=10000.26ms)
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: SUCCESS (makespan=250, SOC=1330, time=10000.09ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=51, SOC=195, time=10001.88ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=52, SOC=230, time=10006.32ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=87, SOC=420, time=10000.60ms)
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: SUCCESS (makespan=97, SOC=409, time=10004.94ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=295, SOC=1332, time=10004.51ms)
+    Progress: 640/1200 runs (53%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=28, SOC=138, time=10001.90ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=96, SOC=470, time=10000.25ms)
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: SUCCESS (makespan=35, SOC=150, time=10006.80ms)
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: SUCCESS (makespan=46, SOC=184, time=10006.24ms)
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: SUCCESS (makespan=26, SOC=119, time=10005.53ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=49, SOC=207, time=10004.37ms)
+    Progress: 650/1200 runs (54%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=4: 32/50 successful (avg makespan: 98.44, avg SOC: 472.66, avg time: 10014.67ms)
+
+Testing k=5...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: SUCCESS (makespan=260, SOC=1209, time=10000.45ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: SUCCESS (makespan=214, SOC=1111, time=10000.07ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=114, SOC=575, time=10005.51ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=121, SOC=548, time=10003.04ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=131, SOC=782, time=10002.62ms)
+    Progress: 660/1200 runs (55%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=35, SOC=164, time=10000.25ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=34, SOC=150, time=10000.27ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=57, SOC=295, time=10000.22ms)
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: SUCCESS (makespan=40, SOC=180, time=10008.09ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=31, SOC=137, time=10007.44ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=110, SOC=485, time=10004.42ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=98, SOC=477, time=10001.78ms)
+    Progress: 670/1200 runs (55%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: SUCCESS (makespan=30, SOC=128, time=10000.24ms)
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: SUCCESS (makespan=48, SOC=206, time=10006.20ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=45, SOC=222, time=10002.37ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=164, SOC=994, time=10004.20ms)
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: SUCCESS (makespan=208, SOC=1101, time=10005.01ms)
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 680/1200 runs (56%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=42, SOC=186, time=10003.32ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=36, SOC=175, time=10005.32ms)
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: SUCCESS (makespan=55, SOC=206, time=10000.27ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=87, SOC=396, time=10004.16ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=75, SOC=323, time=10000.27ms)
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: SUCCESS (makespan=128, SOC=543, time=10004.09ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=142, SOC=596, time=10006.19ms)
+    Progress: 690/1200 runs (57%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=64, SOC=261, time=10003.74ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=73, SOC=353, time=10000.25ms)
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: SUCCESS (makespan=45, SOC=193, time=10005.80ms)
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: SUCCESS (makespan=44, SOC=184, time=10006.34ms)
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: SUCCESS (makespan=35, SOC=136, time=10001.32ms)
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 700/1200 runs (58%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=5: 29/50 successful (avg makespan: 88.48, avg SOC: 424.69, avg time: 10003.22ms)
+
+Testing k=6...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: SUCCESS (makespan=121, SOC=660, time=10000.44ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: SUCCESS (makespan=123, SOC=584, time=10000.17ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=141, SOC=683, time=10000.81ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=107, SOC=493, time=10002.46ms)
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 710/1200 runs (59%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=94, SOC=409, time=10003.69ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=56, SOC=216, time=10003.40ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=229, SOC=1482, time=10000.40ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=225, SOC=1340, time=10002.97ms)
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: SUCCESS (makespan=42, SOC=182, time=10000.26ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=40, SOC=165, time=10000.21ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=143, SOC=669, time=10000.28ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=216, SOC=1139, time=10000.28ms)
+    Progress: 720/1200 runs (60%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: SUCCESS (makespan=26, SOC=132, time=10002.56ms)
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: SUCCESS (makespan=54, SOC=209, time=10000.39ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=46, SOC=234, time=10004.44ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=90, SOC=503, time=10005.39ms)
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: SUCCESS (makespan=94, SOC=375, time=10004.59ms)
+    Progress: 730/1200 runs (60%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=41, SOC=190, time=10000.23ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=42, SOC=195, time=10052.78ms)
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: SUCCESS (makespan=52, SOC=199, time=10002.77ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=88, SOC=396, time=10000.70ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=78, SOC=323, time=10000.28ms)
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: SUCCESS (makespan=111, SOC=707, time=10000.35ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=89, SOC=453, time=10000.30ms)
+    Progress: 740/1200 runs (61%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=42, SOC=162, time=10000.27ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=63, SOC=313, time=10007.71ms)
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: SUCCESS (makespan=53, SOC=219, time=10004.70ms)
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: SUCCESS (makespan=40, SOC=186, time=10001.06ms)
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: SUCCESS (makespan=31, SOC=126, time=10003.46ms)
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 750/1200 runs (62%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=6: 29/50 successful (avg makespan: 88.86, avg SOC: 446.34, avg time: 10003.70ms)
+
+Testing k=7...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: FAILED validation - invalid k-robust solution: agent 2 at location (7, 4) at time 163 conflicts with agent 6 at the same location at time 156 (k=7, time difference: 7)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: SUCCESS (makespan=135, SOC=693, time=10000.15ms)
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=101, SOC=464, time=10000.23ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=87, SOC=366, time=10000.49ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=257, SOC=1542, time=10002.10ms)
+    Progress: 760/1200 runs (63%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: SUCCESS (makespan=136, SOC=567, time=10000.44ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=47, SOC=203, time=10045.05ms)
+      empty-16-16-even-20.scen: FAILED validation - invalid k-robust solution: agent 8 at location (7, 3) at time 50 conflicts with agent 9 at the same location at time 43 (k=7, time difference: 7)
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: SUCCESS (makespan=67, SOC=271, time=10005.56ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=40, SOC=183, time=10003.09ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=87, SOC=419, time=10003.45ms)
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 770/1200 runs (64%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: SUCCESS (makespan=32, SOC=146, time=10000.69ms)
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: SUCCESS (makespan=47, SOC=222, time=10000.20ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=44, SOC=229, time=10006.00ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=198, SOC=897, time=10004.02ms)
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: SUCCESS (makespan=151, SOC=812, time=10002.17ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=93, SOC=420, time=10000.80ms)
+    Progress: 780/1200 runs (65%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: SUCCESS (makespan=49, SOC=227, time=10004.85ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=129, SOC=684, time=10002.68ms)
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: SUCCESS (makespan=55, SOC=219, time=10002.47ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=69, SOC=270, time=10000.31ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=209, SOC=1164, time=10001.22ms)
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: SUCCESS (makespan=71, SOC=361, time=10003.15ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=164, SOC=702, time=10002.18ms)
+    Progress: 790/1200 runs (65%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=40, SOC=163, time=10000.99ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=138, SOC=695, time=10006.21ms)
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: SUCCESS (makespan=29, SOC=159, time=10001.93ms)
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: SUCCESS (makespan=53, SOC=228, time=10005.76ms)
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: SUCCESS (makespan=30, SOC=123, time=10000.46ms)
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 800/1200 runs (66%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=7: 27/50 successful (avg makespan: 94.74, avg SOC: 460.33, avg time: 10003.95ms)
+
+
+================================================================================
+Testing with 15 agents
+================================================================================
+
+Testing k=0...
+      empty-16-16-even-1.scen: SUCCESS (makespan=22, SOC=207, time=10003.46ms)
+      empty-16-16-even-10.scen: SUCCESS (makespan=24, SOC=165, time=10019.93ms)
+      empty-16-16-even-11.scen: SUCCESS (makespan=20, SOC=171, time=10006.29ms)
+      empty-16-16-even-12.scen: SUCCESS (makespan=19, SOC=170, time=10000.52ms)
+      empty-16-16-even-13.scen: SUCCESS (makespan=19, SOC=183, time=10000.21ms)
+      empty-16-16-even-14.scen: SUCCESS (makespan=23, SOC=215, time=10004.42ms)
+      empty-16-16-even-15.scen: SUCCESS (makespan=19, SOC=176, time=10009.07ms)
+      empty-16-16-even-16.scen: SUCCESS (makespan=25, SOC=178, time=10000.80ms)
+      empty-16-16-even-17.scen: SUCCESS (makespan=24, SOC=184, time=10000.38ms)
+    Progress: 810/1200 runs (67%)
+      empty-16-16-even-18.scen: SUCCESS (makespan=19, SOC=195, time=10007.58ms)
+      empty-16-16-even-19.scen: SUCCESS (makespan=18, SOC=152, time=10003.64ms)
+      empty-16-16-even-2.scen: SUCCESS (makespan=26, SOC=216, time=10009.31ms)
+      empty-16-16-even-20.scen: SUCCESS (makespan=20, SOC=160, time=10000.22ms)
+      empty-16-16-even-21.scen: SUCCESS (makespan=20, SOC=183, time=10007.26ms)
+      empty-16-16-even-22.scen: SUCCESS (makespan=24, SOC=210, time=10007.58ms)
+      empty-16-16-even-23.scen: SUCCESS (makespan=18, SOC=146, time=10012.08ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=19, SOC=170, time=10005.10ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=21, SOC=172, time=10006.63ms)
+      empty-16-16-even-3.scen: SUCCESS (makespan=22, SOC=197, time=10000.78ms)
+    Progress: 820/1200 runs (68%)
+      empty-16-16-even-4.scen: SUCCESS (makespan=20, SOC=213, time=10002.63ms)
+      empty-16-16-even-5.scen: SUCCESS (makespan=22, SOC=176, time=10001.75ms)
+      empty-16-16-even-6.scen: SUCCESS (makespan=16, SOC=136, time=10008.36ms)
+      empty-16-16-even-7.scen: SUCCESS (makespan=19, SOC=175, time=10001.59ms)
+      empty-16-16-even-8.scen: SUCCESS (makespan=20, SOC=165, time=10002.66ms)
+      empty-16-16-even-9.scen: SUCCESS (makespan=19, SOC=178, time=10000.35ms)
+      empty-16-16-random-1.scen: SUCCESS (makespan=20, SOC=146, time=10000.24ms)
+      empty-16-16-random-10.scen: SUCCESS (makespan=21, SOC=198, time=10004.53ms)
+      empty-16-16-random-11.scen: SUCCESS (makespan=18, SOC=138, time=10010.99ms)
+      empty-16-16-random-12.scen: SUCCESS (makespan=22, SOC=165, time=10002.80ms)
+    Progress: 830/1200 runs (69%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=26, SOC=216, time=10006.83ms)
+      empty-16-16-random-14.scen: SUCCESS (makespan=17, SOC=171, time=10001.42ms)
+      empty-16-16-random-15.scen: SUCCESS (makespan=20, SOC=154, time=10003.55ms)
+      empty-16-16-random-16.scen: SUCCESS (makespan=15, SOC=116, time=10008.71ms)
+      empty-16-16-random-17.scen: SUCCESS (makespan=17, SOC=174, time=10008.77ms)
+      empty-16-16-random-18.scen: SUCCESS (makespan=21, SOC=197, time=10004.25ms)
+      empty-16-16-random-19.scen: SUCCESS (makespan=24, SOC=200, time=10008.95ms)
+      empty-16-16-random-2.scen: SUCCESS (makespan=17, SOC=187, time=10008.41ms)
+      empty-16-16-random-20.scen: SUCCESS (makespan=18, SOC=179, time=10006.34ms)
+      empty-16-16-random-21.scen: SUCCESS (makespan=28, SOC=192, time=10000.52ms)
+    Progress: 840/1200 runs (70%)
+      empty-16-16-random-22.scen: SUCCESS (makespan=20, SOC=178, time=10001.60ms)
+      empty-16-16-random-23.scen: SUCCESS (makespan=26, SOC=205, time=10007.37ms)
+      empty-16-16-random-24.scen: SUCCESS (makespan=22, SOC=166, time=10007.41ms)
+      empty-16-16-random-25.scen: SUCCESS (makespan=21, SOC=182, time=10007.01ms)
+      empty-16-16-random-3.scen: SUCCESS (makespan=22, SOC=216, time=10004.79ms)
+      empty-16-16-random-4.scen: SUCCESS (makespan=24, SOC=221, time=10010.70ms)
+      empty-16-16-random-5.scen: SUCCESS (makespan=20, SOC=173, time=10004.00ms)
+      empty-16-16-random-6.scen: SUCCESS (makespan=22, SOC=197, time=10008.17ms)
+      empty-16-16-random-7.scen: SUCCESS (makespan=20, SOC=135, time=10001.24ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=21, SOC=148, time=10004.91ms)
+    Progress: 850/1200 runs (70%)
+      empty-16-16-random-9.scen: SUCCESS (makespan=19, SOC=168, time=10019.20ms)
+    k=0: 50/50 successful (avg makespan: 20.78, avg SOC: 178.30, avg time: 10005.51ms)
+
+Testing k=1...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: SUCCESS (makespan=135, SOC=642, time=10003.33ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: SUCCESS (makespan=192, SOC=1341, time=10001.55ms)
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 860/1200 runs (71%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: SUCCESS (makespan=92, SOC=486, time=10002.17ms)
+      empty-16-16-even-24.scen: SUCCESS (makespan=109, SOC=527, time=10004.45ms)
+      empty-16-16-even-25.scen: NO SOLUTION
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 870/1200 runs (72%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: SUCCESS (makespan=56, SOC=291, time=10000.11ms)
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 880/1200 runs (73%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: SUCCESS (makespan=89, SOC=597, time=10006.89ms)
+      empty-16-16-random-20.scen: NO SOLUTION
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 890/1200 runs (74%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: SUCCESS (makespan=132, SOC=683, time=10000.20ms)
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: SUCCESS (makespan=391, SOC=1972, time=10000.81ms)
+      empty-16-16-random-8.scen: SUCCESS (makespan=169, SOC=946, time=10000.29ms)
+    Progress: 900/1200 runs (75%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=1: 9/50 successful (avg makespan: 151.67, avg SOC: 831.67, avg time: 10002.20ms)
+
+Testing k=2...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: SUCCESS (makespan=50, SOC=250, time=10004.53ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: NO SOLUTION
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 910/1200 runs (75%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: NO SOLUTION
+      empty-16-16-even-24.scen: SUCCESS (makespan=58, SOC=274, time=10004.65ms)
+      empty-16-16-even-25.scen: SUCCESS (makespan=139, SOC=904, time=10000.07ms)
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 920/1200 runs (76%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: NO SOLUTION
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 930/1200 runs (77%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=130, SOC=769, time=10000.27ms)
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: SUCCESS (makespan=138, SOC=721, time=10000.26ms)
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: SUCCESS (makespan=123, SOC=762, time=10000.90ms)
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 940/1200 runs (78%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: NO SOLUTION
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: NO SOLUTION
+      empty-16-16-random-8.scen: SUCCESS (makespan=58, SOC=277, time=10001.21ms)
+    Progress: 950/1200 runs (79%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=2: 7/50 successful (avg makespan: 99.43, avg SOC: 565.29, avg time: 10001.70ms)
+
+Testing k=3...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: SUCCESS (makespan=161, SOC=964, time=10000.32ms)
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: NO SOLUTION
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 960/1200 runs (80%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: NO SOLUTION
+      empty-16-16-even-24.scen: SUCCESS (makespan=85, SOC=528, time=10000.22ms)
+      empty-16-16-even-25.scen: NO SOLUTION
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 970/1200 runs (80%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: NO SOLUTION
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 980/1200 runs (81%)
+      empty-16-16-random-13.scen: SUCCESS (makespan=144, SOC=771, time=10001.57ms)
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: NO SOLUTION
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 990/1200 runs (82%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: NO SOLUTION
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: NO SOLUTION
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 1000/1200 runs (83%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=3: 3/50 successful (avg makespan: 130.00, avg SOC: 754.33, avg time: 10000.70ms)
+
+Testing k=4...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: NO SOLUTION
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: NO SOLUTION
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 1010/1200 runs (84%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: NO SOLUTION
+      empty-16-16-even-24.scen: SUCCESS (makespan=173, SOC=1141, time=10002.57ms)
+      empty-16-16-even-25.scen: NO SOLUTION
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 1020/1200 runs (85%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: SUCCESS (makespan=61, SOC=314, time=10000.07ms)
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 1030/1200 runs (85%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: NO SOLUTION
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 1040/1200 runs (86%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: NO SOLUTION
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: NO SOLUTION
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 1050/1200 runs (87%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=4: 2/50 successful (avg makespan: 117.00, avg SOC: 727.50, avg time: 10001.32ms)
+
+Testing k=5...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: NO SOLUTION
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: NO SOLUTION
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 1060/1200 runs (88%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: NO SOLUTION
+      empty-16-16-even-24.scen: NO SOLUTION
+      empty-16-16-even-25.scen: NO SOLUTION
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 1070/1200 runs (89%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: NO SOLUTION
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 1080/1200 runs (90%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: NO SOLUTION
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 1090/1200 runs (90%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: NO SOLUTION
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: NO SOLUTION
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 1100/1200 runs (91%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=5: 0/50 successful
+
+Testing k=6...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: NO SOLUTION
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: NO SOLUTION
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 1110/1200 runs (92%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: NO SOLUTION
+      empty-16-16-even-24.scen: NO SOLUTION
+      empty-16-16-even-25.scen: NO SOLUTION
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 1120/1200 runs (93%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: NO SOLUTION
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 1130/1200 runs (94%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: NO SOLUTION
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 1140/1200 runs (95%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: NO SOLUTION
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: NO SOLUTION
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 1150/1200 runs (95%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=6: 0/50 successful
+
+Testing k=7...
+      empty-16-16-even-1.scen: NO SOLUTION
+      empty-16-16-even-10.scen: NO SOLUTION
+      empty-16-16-even-11.scen: NO SOLUTION
+      empty-16-16-even-12.scen: NO SOLUTION
+      empty-16-16-even-13.scen: NO SOLUTION
+      empty-16-16-even-14.scen: NO SOLUTION
+      empty-16-16-even-15.scen: NO SOLUTION
+      empty-16-16-even-16.scen: NO SOLUTION
+      empty-16-16-even-17.scen: NO SOLUTION
+    Progress: 1160/1200 runs (96%)
+      empty-16-16-even-18.scen: NO SOLUTION
+      empty-16-16-even-19.scen: NO SOLUTION
+      empty-16-16-even-2.scen: NO SOLUTION
+      empty-16-16-even-20.scen: NO SOLUTION
+      empty-16-16-even-21.scen: NO SOLUTION
+      empty-16-16-even-22.scen: NO SOLUTION
+      empty-16-16-even-23.scen: NO SOLUTION
+      empty-16-16-even-24.scen: NO SOLUTION
+      empty-16-16-even-25.scen: NO SOLUTION
+      empty-16-16-even-3.scen: NO SOLUTION
+    Progress: 1170/1200 runs (97%)
+      empty-16-16-even-4.scen: NO SOLUTION
+      empty-16-16-even-5.scen: NO SOLUTION
+      empty-16-16-even-6.scen: NO SOLUTION
+      empty-16-16-even-7.scen: NO SOLUTION
+      empty-16-16-even-8.scen: NO SOLUTION
+      empty-16-16-even-9.scen: NO SOLUTION
+      empty-16-16-random-1.scen: NO SOLUTION
+      empty-16-16-random-10.scen: NO SOLUTION
+      empty-16-16-random-11.scen: NO SOLUTION
+      empty-16-16-random-12.scen: NO SOLUTION
+    Progress: 1180/1200 runs (98%)
+      empty-16-16-random-13.scen: NO SOLUTION
+      empty-16-16-random-14.scen: NO SOLUTION
+      empty-16-16-random-15.scen: NO SOLUTION
+      empty-16-16-random-16.scen: NO SOLUTION
+      empty-16-16-random-17.scen: NO SOLUTION
+      empty-16-16-random-18.scen: NO SOLUTION
+      empty-16-16-random-19.scen: NO SOLUTION
+      empty-16-16-random-2.scen: NO SOLUTION
+      empty-16-16-random-20.scen: NO SOLUTION
+      empty-16-16-random-21.scen: NO SOLUTION
+    Progress: 1190/1200 runs (99%)
+      empty-16-16-random-22.scen: NO SOLUTION
+      empty-16-16-random-23.scen: NO SOLUTION
+      empty-16-16-random-24.scen: NO SOLUTION
+      empty-16-16-random-25.scen: NO SOLUTION
+      empty-16-16-random-3.scen: NO SOLUTION
+      empty-16-16-random-4.scen: NO SOLUTION
+      empty-16-16-random-5.scen: NO SOLUTION
+      empty-16-16-random-6.scen: NO SOLUTION
+      empty-16-16-random-7.scen: NO SOLUTION
+      empty-16-16-random-8.scen: NO SOLUTION
+    Progress: 1200/1200 runs (100%)
+      empty-16-16-random-9.scen: NO SOLUTION
+    k=7: 0/50 successful
+
+
+================================================================================
+Experiment completed: 2026-01-12 02:49:12
+================================================================================
