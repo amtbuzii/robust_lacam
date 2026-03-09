@@ -67,6 +67,7 @@ class HighLevelNode:
 class LaCAM:
     def __init__(self) -> None:
         self.best_solution_time_ms: float | None = None
+        self.first_solution_time_ms: float | None = None
 
     def solve(
         self,
@@ -95,6 +96,7 @@ class LaCAM:
         self.info(1, f"start solving MAPF (k-robust={self.k_robust}, {self.num_agents} agents)")
 
         self.best_solution_time_ms = None
+        self.first_solution_time_ms = None
 
         self.dist_tables = [DistTable(self.grid, g) for g in self.goals]
         self.pibt = PIBT(self.dist_tables, k_robust=self.k_robust)
@@ -102,6 +104,7 @@ class LaCAM:
         OPEN: deque[HighLevelNode] = deque([])
         EXPLORED: dict[tuple[Config, tuple[Config, ...]], HighLevelNode] = {}
         N_goal: HighLevelNode | None = None
+        N_goal_first: HighLevelNode | None = None
 
         Q_init = self.starts
         history_init = (Q_init,)
@@ -123,6 +126,9 @@ class LaCAM:
             if N.Q == self.goals and (N_goal is None or N.g < N_goal.g):
                 N_goal = N
                 self.best_solution_time_ms = self.deadline.elapsed
+                if N_goal_first is None:
+                    N_goal_first = N
+                    self.first_solution_time_ms = self.deadline.elapsed
                 self.info(1, f"goal found/improved, cost={N_goal.g}")
                 if not self.flg_star:
                     break
@@ -196,6 +202,9 @@ class LaCAM:
                             if N_to.Q == self.goals and (N_goal is None or g < N_goal.g):
                                 N_goal = N_to
                                 self.best_solution_time_ms = self.deadline.elapsed
+                                if N_goal_first is None:
+                                    N_goal_first = N_to
+                                    self.first_solution_time_ms = self.deadline.elapsed
                                 self.info(1, f"cost update: goal g={g:4d}")
                             if N_goal is not None and N_to.f < N_goal.g:
                                 OPEN.appendleft(N_to) 
@@ -219,6 +228,7 @@ class LaCAM:
         self._explored: dict = EXPLORED
         self._N_init: HighLevelNode | None = N_init
         self._N_goal: HighLevelNode | None = N_goal
+        self._N_goal_first: HighLevelNode | None = N_goal_first
         if len(OPEN) == 0:
             self.info(1, f"open == 0")
         self.info(1, f"size of explored: {len(EXPLORED)}")

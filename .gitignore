@@ -196,3 +196,11 @@ poetry.lock
 .mplconfig/
 search_tree_*.dot
 search_tree_*.png
+
+# Benchmark outputs (large / generated)
+results*.jsonl
+progress*.json
+success_grid*.png
+soc_grid*.png
+*_grid*.png
+*.prof

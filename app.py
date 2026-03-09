@@ -128,13 +128,13 @@ if __name__ == "__main__":
         "-m",
         "--map-file",
         type=Path,
-        default=Path(__file__).parent / "assets" / "empty-3-3.map",
+        default=Path(__file__).parent / "assets" / "room-32-32-4.map",
     )
     parser.add_argument(
         "-i",
         "--scen-file",
         type=Path,
-        default=Path(__file__).parent / "assets"/ "empty-3-3.scen",
+        default=Path(__file__).parent / "assets"/ "room-32-32-4-even-1.scen",
     )
     parser.add_argument(
         "-N",
@@ -155,7 +155,7 @@ if __name__ == "__main__":
         default=4,
     )
     parser.add_argument("-s", "--seed", type=int, default=0)
-    parser.add_argument("-t", "--time_limit_ms", type=int, default=500)
+    parser.add_argument("-t", "--time_limit_ms", type=int, default=240000)
     parser.add_argument(
         "-k",
         "--k-robust",
@@ -166,7 +166,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--flg_star",
         action=argparse.BooleanOptionalAction,
-        default=False,
+        default=True,
         help="choose LaCAM* (default) or vanilla LaCAM",
     )
     parser.add_argument(

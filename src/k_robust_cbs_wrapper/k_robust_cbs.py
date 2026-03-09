@@ -110,8 +110,8 @@ class KRobustCBS:
             self._write_scenario_file(scen_file, starts, goals, width, height)
             
             # Build command
-            # Optimal CBS needs more time - use at least 10 seconds or the provided limit
-            time_limit_sec = max(10.0, time_limit_ms / 1000.0)
+            # Respect the requested time limit (including sub-second limits for quick tests).
+            time_limit_sec = max(0.001, time_limit_ms / 1000.0)
             cmd = [
                 str(self.executable_path),
                 "-m", str(map_file),
